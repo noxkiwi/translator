@@ -1,0 +1,38 @@
+{
+  "name": "noxkiwi/translator",
+  "description": "I do translations.",
+  "version": "1.0.0",
+  "type": "package",
+  "license": "proprietary",
+  "keywords": [
+    "i18n",
+    "Translations",
+    "Translation",
+    "Internationalization"
+  ],
+  "homepage": "https://nox.kiwi/",
+  "time": "2016-01-05",
+  "authors": [
+    {
+      "name": "Jan Nox",
+      "email": "jan.nox@pm.me",
+      "homepage": "https://nox.kiwi",
+      "role": "Lead Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.0",
+    "noxkiwi/core": "*",
+    "noxkiwi/singleton": "*",
+    "noxkiwi/cache": "*",
+    "noxkiwi/hook": "*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "noxkiwi\\translator\\": "backend/class/"
+    }
+  }
+}
