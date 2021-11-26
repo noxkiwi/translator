@@ -11,6 +11,7 @@ use noxkiwi\core\Session;
 use noxkiwi\singleton\Exception\SingletonException;
 use noxkiwi\singleton\Singleton;
 use noxkiwi\translator\Interfaces\TranslatorInterface;
+use function explode;
 use function in_array;
 use function is_string;
 use function strtoupper;
