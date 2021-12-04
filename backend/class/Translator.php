@@ -284,7 +284,7 @@ abstract class Translator extends Singleton implements TranslatorInterface
     }
 
     /**
-     * I will decide on the languate the user gets to see.
+     * I will decide on the language the user gets to see.
      * @return string
      */
     private static function decideLanguage(): string
