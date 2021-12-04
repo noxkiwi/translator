@@ -283,6 +283,10 @@ abstract class Translator extends Singleton implements TranslatorInterface
         return static::$language;
     }
 
+    /**
+     * I will decide on the languate the user gets to see.
+     * @return string
+     */
     private static function decideLanguage(): string
     {
         try {
