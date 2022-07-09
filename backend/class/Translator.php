@@ -291,19 +291,19 @@ abstract class Translator extends Singleton implements TranslatorInterface
     {
         try {
             $language = static::getLanguageCode((string)Request::getInstance()->get(static::LANGUAGE_KEY));
-            if ($language !== null) {
+            if (! empty($language)) {
                 return $language;
             }
             $language = static::getLanguageCode((string)Cookie::getInstance()->get(static::LANGUAGE_KEY));
-            if ($language !== null) {
+            if (! empty($language)) {
                 return $language;
             }
             $language = static::getLanguageCode((string)Session::getInstance()->get(static::LANGUAGE_KEY));
-            if ($language !== null) {
+            if (! empty($language)) {
                 return $language;
             }
             $language = static::getLanguageCode(explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE'])[0]);
-            if ($language !== null) {
+            if (! empty($language)) {
                 return $language;
             }
         } catch (Exception) {
